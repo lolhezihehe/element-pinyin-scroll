@@ -50,7 +50,7 @@ export default {
 }
 .demo-title {
   width: 500px;
-  margin: 20px auto 0;
+  margin: 20px auto;
 }
 .demo-block {
   height: 500px;

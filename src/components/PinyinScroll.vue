@@ -86,6 +86,8 @@ export default {
       }).sort((a, b) => {
         if (a.letter === '#') {
           return b.letter === '#' ? 0 : 1
+        } else if (b.letter === '#') {
+          return -1
         } else {
           return a.letter < b.letter ? -1 : a.letter > b.letter ? 1 : 0
         }
@@ -182,8 +184,8 @@ $bar-width: 32px;
   color: #666;
   margin: 0 0 15px;
 }
-.pinyin-scroll__text{
-	margin-bottom: 20px;
+.pinyin-scroll__text {
+  margin-bottom: 20px;
 }
 .pinyin-letter__bar {
   position: absolute;
@@ -200,6 +202,7 @@ $bar-width: 32px;
   line-height: 1;
   list-style: none;
   margin: 0;
+  padding: 0;
   li {
     list-style: none;
     margin: 3px 0;
